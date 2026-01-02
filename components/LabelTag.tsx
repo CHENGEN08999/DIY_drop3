@@ -10,21 +10,16 @@ import {
   FontFamily,
 } from "../GlobalStyles";
 
-export type LabelTagType = {
-  /** Variant props */
-  property1?: string;
-};
-
-const LabelTag = ({ property1 = "Tag" }: LabelTagType) => {
+const LabelTag = () => {
   return (
-    <View style={styles.activeTag}>
+    <View style={styles.root}>
       <Text style={styles.active}>Active</Text>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-  activeTag: {
+  root: {
     height: Height.height_17,
     borderRadius: Border.br_8_5,
     backgroundColor: Color.colorLightgreen,

@@ -15,7 +15,7 @@ const RedemptionSuccessModal = () => {
         <LinearGradient
           style={[styles.contentContainer, styles.containerFlexBox]}
           locations={[0, 1]}
-          colors={["#fffeec", Color.accentColour2]}
+          colors={[Color.colorIvory, Color.accentColour2]}
         >
           <View style={[styles.contentWrapper, styles.viewFlexBox]}>
             <TextContainer />
@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
     gap: Gap.gap_10,
   },
   contentWrapper: {
-    gap: 32,
+    gap: Gap.gap_32,
     zIndex: 0,
   },
   buttonContainer: {

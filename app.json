@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "DIY",
-    "slug": "DIY",
+    "name": "diy",
+    "slug": "diy",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

@@ -1,19 +1,16 @@
 import * as React from "react";
-import { Text, StyleSheet, View, ImageSourcePropType } from "react-native";
-import { Gap, StyleVariable, FontFamily, Color } from "../GlobalStyles";
+import { Text, StyleSheet, View } from "react-native";
+import Dividerline from "../assets/divider-line.svg";
+import { Gap, StyleVariable, FontFamily, Color, Height } from "../GlobalStyles";
 
-export type DescriptionContainerType = {
-  dividerLine?: React.ReactNode;
-};
-
-const DescriptionContainer = ({ dividerLine }: DescriptionContainerType) => {
+const DescriptionContainer = () => {
   return (
     <View style={styles.descriptionContainer}>
       <View style={styles.descriptionContent}>
         <Text style={[styles.descriptionTitle, styles.descriptionFlexBox]}>
           Description
         </Text>
-        {dividerLine}
+        <Dividerline style={styles.dividerLineIcon} height={Height.height_2} />
         <Text style={[styles.descriptionText, styles.descriptionFlexBox]}>
           Get RM10 off on your next purchase. Minimum spend RM30 required.
           Applicable to all products.
@@ -56,6 +53,14 @@ const styles = StyleSheet.create({
     fontWeight: StyleVariable.typographyBodyLargeWeight,
     fontFamily: FontFamily.outfitBold,
     color: Color.primary100,
+  },
+  dividerLineIcon: {
+    height: Height.height_2,
+    maxWidth: "100%",
+    overflow: "hidden",
+    maxHeight: "100%",
+    color: Color.borderStandard,
+    alignSelf: "stretch",
   },
   descriptionText: {
     fontSize: StyleVariable.typographyBodyMediumSize,

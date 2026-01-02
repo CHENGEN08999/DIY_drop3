@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Pressable, Text, StyleSheet } from "react-native";
+import { Pressable, Text, StyleSheet, View } from "react-native";
 import {
   Height,
   Border,
@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "center",
-    paddingHorizontal: 108,
+    paddingHorizontal: Padding.padding_108,
     paddingVertical: Padding.padding_9,
   },
   text: {

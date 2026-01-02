@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Image } from "expo-image";
 import { StyleSheet, Text, View, ImageSourcePropType } from "react-native";
+import PointsIcon1 from "../assets/Points-Icon1.svg";
 import Frame1 from "../assets/Frame1.svg";
 import Button1 from "./Button1";
 import {
@@ -8,35 +9,35 @@ import {
   FontFamily,
   StyleVariable,
   Height,
+  Width,
   BoxShadow,
   Border,
   Padding,
   Gap,
-  Width,
   FontSize,
 } from "../GlobalStyles";
 
-export type VoucherCardType = {
-  pointsIcon?: React.ReactNode;
+export type VoucherCard1Type = {
+  voucherImageContainer?: ImageSourcePropType;
   text?: string;
   redeemButtonAlignSelf?: string;
   redeemButtonWidth?: string;
   redeemButtonFlex?: number;
 };
 
-const VoucherCard = ({
-  pointsIcon,
+const VoucherCard1 = ({
+  voucherImageContainer,
   text,
   redeemButtonAlignSelf,
   redeemButtonWidth,
   redeemButtonFlex,
-}: VoucherCardType) => {
+}: VoucherCard1Type) => {
   return (
     <View style={styles.voucherCard}>
       <Image
         style={styles.voucherImageContainer}
         contentFit="cover"
-        source={require("../assets/Voucher-Image-Container1.png")}
+        source={voucherImageContainer}
       />
       <View style={styles.voucherCardContent}>
         <View style={styles.container}>
@@ -51,7 +52,11 @@ const VoucherCard = ({
           <View style={[styles.container2, styles.containerFlexBox]}>
             <View style={styles.container3}>
               <View style={[styles.container4, styles.containerFlexBox]}>
-                {pointsIcon}
+                <PointsIcon1
+                  style={styles.pointsIcon}
+                  width={Width.width_20}
+                  height={Height.height_19_9}
+                />
                 <Text style={[styles.rewardPoints, styles.rewardTypo]}>
                   500 points
                 </Text>
@@ -90,8 +95,9 @@ const styles = StyleSheet.create({
     textAlign: "left",
   },
   voucherCard: {
+    height: Height.height_239_9,
+    width: Width.width_280,
     alignItems: "center",
-    alignSelf: "stretch",
   },
   voucherImageContainer: {
     height: Height.height_128,
@@ -154,6 +160,10 @@ const styles = StyleSheet.create({
     gap: Gap.gap_4,
     alignItems: "center",
   },
+  pointsIcon: {
+    height: Height.height_19_9,
+    width: Width.width_20,
+  },
   rewardPoints: {
     width: Width.width_77,
   },
@@ -166,4 +176,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default VoucherCard;
+export default VoucherCard1;

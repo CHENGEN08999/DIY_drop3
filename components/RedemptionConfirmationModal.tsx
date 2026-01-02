@@ -24,7 +24,7 @@ const RedemptionConfirmationModal = () => {
       <LinearGradient
         style={[styles.modalContainer, styles.modalContainerFlexBox]}
         locations={[0, 1]}
-        colors={["#fffeec", Color.accentColour2]}
+        colors={[Color.colorIvory, Color.accentColour2]}
       >
         <View style={[styles.contentContainer, styles.containerFlexBox]}>
           <View style={styles.titleContainerFlexBox}>

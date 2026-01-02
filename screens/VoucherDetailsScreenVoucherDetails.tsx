@@ -3,8 +3,8 @@ import { ScrollView, StyleSheet, View, Text } from "react-native";
 import { Image } from "expo-image";
 import OfferDetailsContainer1 from "../components/OfferDetailsContainer1";
 import DescriptionContainer from "../components/DescriptionContainer";
-import Dividerline from "../assets/divider-line.svg";
 import TermsAndConditionsContainer from "../components/TermsAndConditionsContainer";
+import Dividerline from "../assets/divider-line.svg";
 import {
   Height,
   Color,
@@ -37,9 +37,7 @@ const VoucherDetailsScreenVoucherDetails = () => {
       />
       <View style={[styles.contentContainer, styles.topFlexBox]}>
         <OfferDetailsContainer1 />
-        <DescriptionContainer
-          dividerLine={<Dividerline height={Height.height_2} />}
-        />
+        <DescriptionContainer />
         <TermsAndConditionsContainer
           dividerLine={<Dividerline height={Height.height_2} />}
         />

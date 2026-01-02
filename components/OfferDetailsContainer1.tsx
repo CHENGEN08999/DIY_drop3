@@ -38,7 +38,7 @@ const OfferDetailsContainer1 = () => {
       <Text style={[styles.offerSubtitle, styles.offerFlexBox]}>
         MR.DIY Malaysia
       </Text>
-      <LabelTag property1="Tag" />
+      <LabelTag />
       <Dividerline style={styles.dividerLineIcon} height={Height.height_2} />
       <View style={styles.validityContainer}>
         <Text style={[styles.offerSubtitle, styles.offerFlexBox]}>

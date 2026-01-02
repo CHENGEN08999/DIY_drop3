@@ -2,18 +2,20 @@ const Stack = createNativeStackNavigator();
 import * as React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { useFonts } from "expo-font";
+import EnticingScreen from "./screens/EnticingScreen";
 import VoucherDetailsScreenRedemption from "./screens/VoucherDetailsScreenRedemption";
-import RedemptionSuccessModal from "./components/RedemptionSuccessModal";
-import CashVouchersList from "./components/CashVouchersList";
-import VoucherDetailsScreenVoucherDetails from "./components/VoucherDetailsScreenVoucherDetails";
+import RedeemRewardsHub from "./screens/RedeemRewardsHub";
+import VoucherDetailsScreenVoucherDetails from "./screens/VoucherDetailsScreenVoucherDetails";
+import MembershipQRScreen from "./components/MembershipQRScreen";
+import RedemptionSuccessModal from "./screens/RedemptionSuccessModal";
+import CashVouchersList from "./screens/CashVouchersList";
 import RedemptionConfirmationModal from "./components/RedemptionConfirmationModal";
+import MembershipSection from "./components/MembershipSection";
 import TextContainer from "./components/TextContainer";
 import BottomNavigationBar from "./components/BottomNavigationBar";
 import Box from "./components/Box";
 import CashVoucherList from "./components/CashVoucherList";
 import VoucherCard from "./components/VoucherCard";
-import LabelTag from "./components/LabelTag";
-import OfferDetailsContainer1 from "./components/OfferDetailsContainer1";
 
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { View, Text, Pressable, TouchableOpacity } from "react-native";
@@ -40,8 +42,28 @@ const App = () => {
             screenOptions={{ headerShown: false }}
           >
             <Stack.Screen
+              name="EnticingScreen"
+              component={EnticingScreen}
+              options={{ headerShown: false }}
+            />
+            <Stack.Screen
               name="Button1"
               component={VoucherDetailsScreenRedemption}
+              options={{ headerShown: false }}
+            />
+            <Stack.Screen
+              name="CashVoucherSection"
+              component={RedeemRewardsHub}
+              options={{ headerShown: false }}
+            />
+            <Stack.Screen
+              name="LabelTag"
+              component={VoucherDetailsScreenVoucherDetails}
+              options={{ headerShown: false }}
+            />
+            <Stack.Screen
+              name="MembershipQRScreen"
+              component={MembershipQRScreen}
               options={{ headerShown: false }}
             />
             <Stack.Screen
@@ -55,13 +77,13 @@ const App = () => {
               options={{ headerShown: false }}
             />
             <Stack.Screen
-              name="LabelTag"
-              component={VoucherDetailsScreenVoucherDetails}
+              name="RedemptionConfirmationModal"
+              component={RedemptionConfirmationModal}
               options={{ headerShown: false }}
             />
             <Stack.Screen
-              name="RedemptionConfirmationModal"
-              component={RedemptionConfirmationModal}
+              name="MembershipQRScreen"
+              component={MembershipSection}
               options={{ headerShown: false }}
             />
             <Stack.Screen
@@ -87,16 +109,6 @@ const App = () => {
             <Stack.Screen
               name="BottomNavigationBar"
               component={VoucherCard}
-              options={{ headerShown: false }}
-            />
-            <Stack.Screen
-              name="LabelTag"
-              component={LabelTag}
-              options={{ headerShown: false }}
-            />
-            <Stack.Screen
-              name="LabelTag"
-              component={OfferDetailsContainer1}
               options={{ headerShown: false }}
             />
           </Stack.Navigator>

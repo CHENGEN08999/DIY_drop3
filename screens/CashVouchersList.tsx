@@ -18,7 +18,7 @@ const CashVouchersList = () => {
     <LinearGradient
       style={styles.scrollviewLayout}
       locations={[0, 0.29]}
-      colors={[Color.accentColour2, "#fffeec"]}
+      colors={[Color.accentColour2, Color.colorIvory]}
     >
       <ScrollView
         style={styles.scrollviewLayout}

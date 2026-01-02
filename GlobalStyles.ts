@@ -19,9 +19,14 @@ export const FontSize = {
 /* Colors */
 export const Color = {
   accentColour2: "#ffd400",
+  accentColour4: "#fab822",
+  backgroundColour1: "#f5f5f5",
   borderStandard: "#dadada",
   colorGray: "rgba(0, 0, 0, 0.69)",
+  colorIvory: "#fffeec",
+  colorLightgoldenrodyellow: "#c9f7ca",
   colorLightgreen: "#b9ffbb",
+  colorMistyrose: "#ffe9eb",
   colorPalevioletred: "#ba5476",
   colorPink: "#fbbdd7",
   neutral0: "#fff",
@@ -69,8 +74,12 @@ export const Gap = {
   gap_0: 0,
   gap_10: 10,
   gap_12: 12,
+  gap_15: 15,
   gap_16: 16,
   gap_18: 18,
+  gap_2: 2,
+  gap_20: 20,
+  gap_32: 32,
   gap_36: 36,
   gap_4: 4,
   gap_5: 5,
@@ -82,9 +91,15 @@ export const Padding = {
   padding_0: 0,
   padding_1: 1,
   padding_10: 10,
+  padding_108: 108,
+  padding_11: 11,
+  padding_14: 14,
   padding_15: 15,
+  padding_16: 16,
   padding_19: 19,
   padding_20: 20,
+  padding_36: 36,
+  padding_40: 40,
   padding_5: 5,
   padding_9: 9,
 };
@@ -94,7 +109,9 @@ export const Margin = {
 };
 /* border radiuses */
 export const Border = {
+  br_1_5: 2,
   br_15: 15,
+  br_20: 20,
   br_30: 30,
   br_50: 50,
   br_8_5: 9,
@@ -102,12 +119,17 @@ export const Border = {
 /* box shadows */
 export const BoxShadow = {
   cardShadow: "0px 0px 20px rgba(0, 0, 0, 0.1)",
+  shadow_drop: "0px 0px 10px rgba(0, 0, 0, 0.1)",
 };
 /* width */
 export const Width = {
   width_126: 126,
   width_144: 144,
+  width_18: 18,
   width_20: 20,
+  width_226: 226,
+  width_280: 280,
+  width_30: 30,
   width_320: 320,
   width_37: 37,
   width_42: 42,
@@ -127,7 +149,16 @@ export const Height = {
   height_19_9: 20,
   height_2: 2,
   height_20: 20,
+  height_239_9: 240,
+  height_24: 24,
+  height_26: 26,
+  height_3: 3,
+  height_30: 30,
   height_40: 40,
   height_42: 42,
   height_60: 60,
+};
+/* max-width */
+export const MaxWidth = {
+  max_w_400: 400,
 };
